@@ -1,0 +1,117 @@
+html {
+    box-sizing: border-box; 
+ }
+ *, *::before, *::after {
+   box-sizing: inherit;
+ }
+ /* Configuraciones Globales */
+ body {
+    background-color: #000000;
+ }
+ a {
+    color: #ffffff;
+    text-decoration: none;
+ }
+ .descripcion-pelicula {
+    color: #ffffff;
+    width: 500px;
+ }
+ h1 {
+    color: #e50914;
+    height: 35px;
+    margin: 20px 0;
+ }
+ h2 {
+    color: #ffffff;
+    font-size: 30px;
+ }
+ h3 {
+    color: #ffffff;
+    font-size: 20px;
+    margin-top: 50px;
+ }
+ img {
+    width: 200px;
+ }
+ @media(max-width:480px) {
+   img{
+      width: 300px;
+      margin-bottom: 20px;
+   }
+ }
+
+ .contenedor {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;     
+    /* margin = centrar contenido , 0 = alto y bajo, auto = los costados */
+ }
+ .flex-header {
+    display: flex; 
+    justify-content: space-between;
+ }
+ @media(max-width:480px) {
+   .flex-header {
+      flex-direction: column;
+      align-items: center;
+   }
+ }
+ nav {
+    width: 600px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+ }
+ @media(max-width:480px) {
+   nav {
+      flex-direction: column;
+      height: 200px;
+      margin-bottom: 30px;
+   }
+ }
+ @media(min-width:481px) and (max-width:900) {
+   nav{
+      width: 450px;
+   }
+ }
+ /* Hero */
+ .hero {
+    height: 600px;
+    background: linear-gradient(rgba(0, 0, 0, 0.5) 0%, rgba(0, 0, 0, 0.5) 100%), url(../img/principal.jpeg);
+    background-position: center center;
+    background-size: cover;
+ }
+ /* Información de la Pelicula Principal */
+ .info-pelicula {
+   height: 500px;
+   display: flex;
+   flex-direction: column;
+   justify-content: flex-end;
+ }
+ /* Pocionamiento de botones */
+ .botones {
+   display: flex;
+   margin-top: 30px;
+ }
+ .boton {
+   background-color: gray;
+   padding: 10px 25px;
+   border-radius: 20px;
+   margin: 0 30px;
+ }
+ /* Efecto al pasar el mouse por el boton */
+ .boton:hover {
+   background-color: #ffffff;
+   color: #000000;
+ }
+ /* Pasarela */
+ .pasarela {
+   display: flex;
+   margin-bottom: 80px;
+ }
+ @media(max-width:480px) {
+   .pasarela {
+      flex-direction: column;
+      align-items: center;
+   }
+ }
